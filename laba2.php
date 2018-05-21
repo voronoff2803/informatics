@@ -13,7 +13,7 @@
 require_once 'connect.php';
 
 
-  $connection = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+  $connection = mysqli_connect($host, $user, $password, $db);
 
   if($connection == false)
   {
