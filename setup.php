@@ -23,12 +23,12 @@ require_once 'connect.php';
   }
 
 $query = "CREATE TABLE `classrooms` (
-  `classroom_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `classroom_name` varchar(30) NOT NULL,
+  `classroom_id` bigint(60) NOT NULL AUTO_INCREMENT,
+  `classroom_name` varchar(50) NOT NULL,
   PRIMARY KEY (`classroom_id`)
 )";
 $result = mysqli_query($connection, $query);
-$query = "INSERT INTO `classrooms` VALUES (1,'Кабинет русского языка'),(2,'Кабинет математики'),(3,'Кабинет физики'),(4,'кабинет информатики')";
+$query = "INSERT INTO `classrooms` (classroom_name) VALUES ('Кабинет русского языка'),('Кабинет математики'),('Кабинет физики'),('кабинет информатики')";
 $result = mysqli_query($connection, $query);
 
 $query = "CREATE TABLE `gradebook` (
