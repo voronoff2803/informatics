@@ -2,7 +2,7 @@
 require_once 'connect.php';
  
 $connection = mysqli_connect($host, $user, $password, $db);
-echo "<form method='GET' action='laba4.php'>
+echo "<form method='GET' action='search.php'>
 <p>Введите имя ученика: <input type='text' name='full_name' value='$full_name'></p>
 <p>Введите номер ученика: <input type='text' name='number' value='$number'></p>
 <p><input type='submit' name='enter' value='Поиск'></p>
