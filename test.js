@@ -13,7 +13,7 @@ function sleep(milliseconds) {
 
 
 
-var times = 10;
+var times = 20;
 for(var i=0; i < times; i++){
     var man = 100000 + getRandomInt(150000);
     console.log(man)
