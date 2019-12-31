@@ -21,7 +21,7 @@ runAsyncAjaxRequest2("2003",
 
 
 
-var times = 35;
+var times = 30;
 for(var i=0; i < times; i++){
     var man = 100000 + getRandomInt(150000);
     console.log(man)
